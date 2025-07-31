@@ -19,7 +19,7 @@ export default function Portfolio() {
   return <>
       <div className="w-full min-h-screen flex justify-center items-center flex-col text-[#2C3E50] mt-20 pt-20 ">
           <div className="title">
-              <h2 className='text-4xl font-bold uppercase'>portfolio component</h2>
+              <h2 className='text-4xl font-bold uppercase text-center'>portfolio component</h2>
           </div>
           <div className="design flex justify-center items-center gap-4 my-4">
               <div className='h-1 w-20 bg-[#2C3E50]'></div>
@@ -85,7 +85,7 @@ export default function Portfolio() {
           </div>
         
   {selectedImage ? <div onClick={closeLightbox} className="lightboxOverlay fixed top-0 left-0 right-0 bottom-0 bg-black/80 flex justify-center items-center z-50 cursor-pointer">
-  <img src={selectedImage} alt="Enlarged" className="w-1/2 rounded-lg" />
+  <img src={selectedImage} alt="Enlarged" className="w-3/4 md:w-1/2 rounded-lg" />
 </div>
  : ''}
       </div>
